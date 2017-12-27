@@ -33,19 +33,20 @@ due_date = media.Movie("Due Date",
                        "https://www.youtube.com/watch?v=uuqb9iq_QKo")
 
 sherlock = media.Movie("Sherlock Holmes",
-                       'Sherlock Holmes is a fictional private detective'
-                       ' created by British author Sir Arthur Conan Doyle.'
-                       ' Known as a "consulting detective" in the stories,'
-                       ' Holmes is known for his proficiency with observation',
+                       '''Sherlock Holmes is a fictional private detective
+                        created by British author Sir Arthur Conan Doyle. Known
+                        as a "consulting detective" in the stories,
+                        Holmes is known for his proficiency with
+                        observation''',
                        "http://www.goldenglobes.com/sites/default/files/films/"
                        "sherlockholmesposter.jpg",
                        "https://www.youtube.com/watch?v=iKUzhzustok")
 
 iron_man2 = media.Movie("Iron Man 2",
-                        "Tony Stark is under pressure from various sources,"
-                        " including the government, to share his technology"
-                        " with the world. He must find a way to fight them"
-                        " while also tackling his other enemies.",
+                        '''Tony Stark is under pressure from various sources,
+                         including the government, to share his technology
+                         with the world. He must find a way to fight them
+                         while also tackling his other enemies.''',
                         "https://www.wired.com/images_blogs/underwire/2010/03"
                         "/iron_man_int_1200.jpg",
                         "https://www.youtube.com/watch?v=DIfgxIv5xmk")
@@ -57,7 +58,14 @@ the_judge = media.Movie("The Judge",
                         "https://i.ytimg.com/vi/kjj4HFyJZps/movieposter.jpg",
                         "https://www.youtube.com/watch?v=ZBvK6ni97W8")
 
-#creating a list of instances
-movies = [sherlock, iron_man2, the_judge, due_date, avengers, civil_war]
-#passing the list as parameters to fresh_tomatoes.py
+# creating a list of instances
+movies = [
+    sherlock,
+    iron_man2,
+    the_judge,
+    due_date,
+    avengers,
+    civil_war
+]
+# passing the list as parameters to fresh_tomatoes.py
 fresh_tomatoes.open_movies_page(movies)
